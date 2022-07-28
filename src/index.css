@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/public/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Variable.woff") format("woff"),
+    url("/public/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("/public/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-VariableItalic.woff") format("woff"),
+    url("/public/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("/public/fonts/Satoshi-Light.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Light.woff") format("woff"),
+    url("/public/fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("/public/fonts/Satoshi-LightItalic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-LightItalic.woff") format("woff"),
+    url("/public/fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/public/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Regular.woff") format("woff"),
+    url("/public/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("/public/fonts/Satoshi-Italic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Italic.woff") format("woff"),
+    url("/public/fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/public/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Medium.woff") format("woff"),
+    url("/public/fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/public/fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("/public/fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/public/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Bold.woff") format("woff"),
+    url("/public/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("/public/fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-BoldItalic.woff") format("woff"),
+    url("/public/fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/public/fonts/Satoshi-Black.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Black.woff") format("woff"),
+    url("/public/fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/public/fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-BlackItalic.woff") format("woff"),
+    url("/public/fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+.hamburger-react > div {
+  width: 15px !important;
+  margin-left: 5px !important;
+  height: 1px !important;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.word-wrapper {
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 375px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  h1 {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  h1 {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  h1 {
+    font-size: 88px;
+  }
+}
