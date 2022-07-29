@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anomaly-landing-page/static/css/main.f8932e7c.css",
-    "main.js": "/anomaly-landing-page/static/js/main.fe4008de.js",
+    "main.css": "/anomaly-landing-page/static/css/main.0ccfa830.css",
+    "main.js": "/anomaly-landing-page/static/js/main.50934219.js",
     "static/js/787.bd02f72e.chunk.js": "/anomaly-landing-page/static/js/787.bd02f72e.chunk.js",
     "static/media/Satoshi-VariableItalic.ttf": "/anomaly-landing-page/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
     "static/media/Satoshi-Variable.ttf": "/anomaly-landing-page/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
@@ -41,12 +41,12 @@
     "static/media/Satoshi-LightItalic.woff2": "/anomaly-landing-page/static/media/Satoshi-LightItalic.540a6dd2e29f70e15477.woff2",
     "static/media/Satoshi-Light.woff2": "/anomaly-landing-page/static/media/Satoshi-Light.df8f06167ee6fd05a131.woff2",
     "index.html": "/anomaly-landing-page/index.html",
-    "main.f8932e7c.css.map": "/anomaly-landing-page/static/css/main.f8932e7c.css.map",
-    "main.fe4008de.js.map": "/anomaly-landing-page/static/js/main.fe4008de.js.map",
+    "main.0ccfa830.css.map": "/anomaly-landing-page/static/css/main.0ccfa830.css.map",
+    "main.50934219.js.map": "/anomaly-landing-page/static/js/main.50934219.js.map",
     "787.bd02f72e.chunk.js.map": "/anomaly-landing-page/static/js/787.bd02f72e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8932e7c.css",
-    "static/js/main.fe4008de.js"
+    "static/css/main.0ccfa830.css",
+    "static/js/main.50934219.js"
   ]
 }
