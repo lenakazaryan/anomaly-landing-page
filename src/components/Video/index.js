@@ -85,7 +85,7 @@ function Video() {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
           variants={headerAnimation1}
-          className="border border-transparent hover:border-gray hover:bg-white hover:text-black transition duration-300 ease-in md:w-[172px] max-w-[352px] font-black w-[100%] text-[12px] tracking-[0.72px] py-[12px] px-[25px] bg-black rounded-[20px] text-white"
+          className="border border-transparent hover:border-gray hover:bg-white hover:text-black transition duration-100 ease-in md:w-[172px] max-w-[352px] font-black w-[100%] text-[12px] tracking-[0.72px] py-[12px] px-[25px] bg-black rounded-[20px] text-white"
         >
           TRY IT FOR FREE
         </motion.button>
@@ -94,7 +94,7 @@ function Video() {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
           variants={headerAnimation2}
-          className="transition duration-300 ease-in md:w-[172px] hover:text-gray border border-navBorder max-w-[352px] md:mt-[0] w-[100%] font-black text-[12px] tracking-[0.72px] py-[12px] px-[25px] rounded-[20px] mt-[15px]"
+          className="transition duration-100 ease-in md:w-[172px] hover:text-gray border border-navBorder max-w-[352px] md:mt-[0] w-[100%] font-black text-[12px] tracking-[0.72px] py-[12px] px-[25px] rounded-[20px] mt-[15px]"
         >
           VIEW FEATURES
         </motion.button>

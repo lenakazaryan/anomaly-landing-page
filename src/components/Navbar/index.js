@@ -107,7 +107,7 @@ function Navbar({ hidden, isHidden }) {
     >
       <NavbarContainer>
         <NavbarLogo>
-          <img className="logo" src="images/logo-dark.png" alt="no" />
+          <img className="logo" src="https://framerusercontent.com/modules/assets/V7e13SRN5Rw4HfvKLNk79Qo4dc~L5c1YyZOJPxBqYPA9g4nutR35paB8OiY9RuD9B70GrU.png" alt="no" />
         </NavbarLogo>
         <Navigation>
           <NavigationItem to="/">PRODUCT</NavigationItem>

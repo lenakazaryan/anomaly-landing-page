@@ -56,7 +56,7 @@ function Footer() {
     <FooterContainer>
       <div className="lg:m-auto lg:flex lg:gap-[60px]">
         <FooterLogoContainer>
-          <FooterLogo src="images/logo-light.png" />
+          <FooterLogo src="https://framerusercontent.com/modules/assets/feyAsR1h6RnnBSNum9biRYtk0E~Qrvu_apd-_-VMEmd_zMzJ8jJ-NY29GzPuPMwk6Srbr0.png" />
         </FooterLogoContainer>
         <FooterContentContainer>
           <FooterItem title="Info" description={getLists(footerInfo)} />
