@@ -26,7 +26,7 @@ export const getListsFooter = (arr) =>
   arr.map((item) => (
     <div
       className="pb-[13px] 
-    font-medium"
+    font-medium cursor-pointer"
       key={item}
     >
       {item}

@@ -4,8 +4,8 @@ import { footerItem } from "../../helpers";
 
 const FooterChildContainer = tw.div`
 bg-footerBackground
- pl-[16px] 
- pr-[16px] 
+ pl-4
+ pr-4
  text-white 
  pt-[41px] 
  pb-[45px]

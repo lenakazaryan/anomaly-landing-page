@@ -1,5 +1,6 @@
 import tw from "tailwind-styled-components";
 import JobContent from "../Job/JobContent";
+import ProfilePicture from "../../assets/images/profile-picture.jpg";
 
 const JobContainer = tw.div`
   flex
@@ -7,7 +8,7 @@ const JobContainer = tw.div`
   justify-center
   items-center
   gap-[24px]
-  px-[16px]
+  px-4
   pt-[140px]
   md:flex-row
 `;
@@ -16,21 +17,21 @@ function Job() {
   return (
     <JobContainer>
       <JobContent
-        image="https://framerusercontent.com/modules/assets/ghykWlIGB0THdwsj1UOsaz844~MNcnbSp3qeegxRyM6DYClrwQKoqN9Cjnc2wKxFe__4Q.jpg"
+        image={ProfilePicture}
         city="GEORGIA"
         job="PRODUCT DESIGNER"
         jobDescription="Occaecati omnis molestias nihil. Expedita sint voluptatem qui ut
           voluptas. Nemo quia eum deserunt omnis eaque."
       ></JobContent>
       <JobContent
-        image="https://framerusercontent.com/modules/assets/ghykWlIGB0THdwsj1UOsaz844~MNcnbSp3qeegxRyM6DYClrwQKoqN9Cjnc2wKxFe__4Q.jpg"
+        image={ProfilePicture}
         city="GEORGIA"
         job="PRODUCT DESIGNER"
         jobDescription="Occaecati omnis molestias nihil. Expedita sint voluptatem qui ut
           voluptas. Nemo quia eum deserunt omnis eaque."
       ></JobContent>
       <JobContent
-        image="https://framerusercontent.com/modules/assets/ghykWlIGB0THdwsj1UOsaz844~MNcnbSp3qeegxRyM6DYClrwQKoqN9Cjnc2wKxFe__4Q.jpg"
+        image={ProfilePicture}
         city="GEORGIA"
         job="PRODUCT DESIGNER"
         jobDescription="Occaecati omnis molestias nihil. Expedita sint voluptatem qui ut

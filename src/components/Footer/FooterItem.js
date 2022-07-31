@@ -6,7 +6,7 @@ const Footercontent = tw.div`
   text-white
   w-full
   rounded-[20px]
-  p-[24px]
+  p-6
   max-w-[480px]
   md:border-none
 `;
@@ -17,7 +17,7 @@ function FooterItem({ title, description }) {
       <p className="text-start text-footerSubtitle text-[16px] font-medium md:mb-[30px]">
         {title}
       </p>
-      <ul className="text-start">{description}</ul>
+      <ul className="text-start cursor-pointer">{description}</ul>
     </Footercontent>
   );
 }

@@ -1,14 +1,15 @@
 import "./App.css";
 import tw from "tailwind-styled-components";
 import Navbar from "./components/Navbar";
-import Title from "./components/Title"
+import Title from "./components/Title";
 import Video from "./components/Video";
 import Job from "./components/Job";
 import Possibilities from "./components/Possibilities";
 import ReadyToWork from "./components/ReadyToWork";
 import Footer from "./components/Footer";
 import FooterChild from "./components/FooterChild";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import VideoOverlay from "./components/VideoOverlay";
 
 const Container = tw.div`
     flex
@@ -20,17 +21,34 @@ const Container = tw.div`
 `;
 
 function App() {
-  const [hidden, isHidden] = useState(true)
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    modalIsOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+  }, [modalIsOpen]);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  const [hidden, isHidden] = useState(true);
   return (
     <div className="App">
+      {modalIsOpen ? <VideoOverlay closeModal={closeModal} /> : null}
       <Navbar hidden={hidden} isHidden={isHidden} />
-      <Title hidden={hidden} isHidden={isHidden}/>
-      <Video/>
-      <Job/>
-      <Possibilities/>
-      <ReadyToWork/>
-      <Footer/>
-      <FooterChild/>
+      <Title hidden={hidden} isHidden={isHidden} />
+      <Video openModal={openModal} />
+      <Job />
+      <Possibilities />
+      <ReadyToWork />
+      <Footer />
+      <FooterChild />
     </div>
   );
 }

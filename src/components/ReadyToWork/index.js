@@ -17,7 +17,7 @@ const ReadyToWorkContainer = tw.div`
 `;
 
 const ReadyToWorkContent = tw.div`
-  p-[32px] 
+  p-8
   md:w-[616px] 
   md:flex 
   md:flex-col 
@@ -48,6 +48,7 @@ const ReadyToWorkDescription = tw.p`
 `;
 
 const ReadyToWorkButton = tw.button`
+  cursor-pointer
   transition 
   duration-300 
   ease-in

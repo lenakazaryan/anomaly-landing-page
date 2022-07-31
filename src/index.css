@@ -179,3 +179,19 @@
     font-size: 88px;
   }
 }
+
+.imgnav:hover{
+ filter: opacity(0.5) drop-shadow(0 0 0 #E7EBF2);
+}
+
+.imgfooter:hover{
+  filter: opacity(0.5);
+ }
+
+ .arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid black;
+}

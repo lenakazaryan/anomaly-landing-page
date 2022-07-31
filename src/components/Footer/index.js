@@ -1,4 +1,5 @@
 import tw from "tailwind-styled-components";
+import LogoLight from "../../assets/images/logo-light.png";
 import FooterItem from "./FooterItem";
 import {
   footerInfo,
@@ -20,7 +21,7 @@ const FooterLogoContainer = tw.div`
 `;
 
 const FooterContentContainer = tw.div`
-  pt-[10px]
+  pt-2.5
   flex
   flex-col
   gap-[19px]
@@ -31,10 +32,10 @@ const FooterContentContainer = tw.div`
 `;
 
 const FooterContainer = tw.div`
-  pt-[20px]
+  pt-5
   bg-footerBackground 
-  pr-[16px] 
-  pl-[16px] 
+  pr-4
+  pl-4 
   pb-[41px] 
   md:flex 
   md:flex-col
@@ -47,8 +48,10 @@ const FooterContainer = tw.div`
 
 const FooterLogo = tw.img`
  pt-[25px]
- pb-[8px]
+ pb-2
  lg:pt-0
+ imgfooter
+ cursor-pointer
 `;
 
 function Footer() {
@@ -56,7 +59,7 @@ function Footer() {
     <FooterContainer>
       <div className="lg:m-auto lg:flex lg:gap-[60px]">
         <FooterLogoContainer>
-          <FooterLogo src="https://framerusercontent.com/modules/assets/feyAsR1h6RnnBSNum9biRYtk0E~Qrvu_apd-_-VMEmd_zMzJ8jJ-NY29GzPuPMwk6Srbr0.png" />
+          <FooterLogo src={LogoLight} />
         </FooterLogoContainer>
         <FooterContentContainer>
           <FooterItem title="Info" description={getLists(footerInfo)} />

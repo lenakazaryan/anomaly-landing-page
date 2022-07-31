@@ -4,14 +4,15 @@ import { navbarAnimation } from "../../constants";
 import { motion } from "framer-motion";
 import { Cross as Hamburger } from "hamburger-react";
 import Menu from "../Menu/Menu";
+import LogoDark from "../../assets/images/logo-dark.png";
 
 const NavbarContainer = tw.div`
   flex
   flex-row
   justify-between
   items-center
-  py-[12px]
-  px-[16px]
+  py-3
+  px-4
   border-b
   border-navBorder
   max-w-[1328px]
@@ -24,10 +25,10 @@ const NavbarContainer = tw.div`
 
 const NavbarLogo = tw.div`
   w-[133px]
+  cursor-pointer
 `;
 
 const Navigation = tw.div`
-
   none
   hidden
   lg:block 
@@ -47,10 +48,11 @@ const NavigationItem = tw.a`
   border 
   border-transparent 
   rounded-[20px] 
-  py-[12px] 
+  py-3
   px-[21px] 
   hover:text-black
  hover:border-navBorder
+  cursor-pointer
 `;
 
 const NavSignUp = tw.button`
@@ -70,6 +72,7 @@ text-white
 hover:bg-white
 hover:text-black
 hover:border-navBorder
+cursor-pointer
 `;
 
 const NavLogin = tw.button`
@@ -81,6 +84,7 @@ const NavLogin = tw.button`
   mr-[40px] 
   text-[12px] 
   tracking-[0.72px]
+  cursor-pointer
 `;
 
 function Navbar({ hidden, isHidden }) {
@@ -107,7 +111,7 @@ function Navbar({ hidden, isHidden }) {
     >
       <NavbarContainer>
         <NavbarLogo>
-          <img className="logo" src="https://framerusercontent.com/modules/assets/V7e13SRN5Rw4HfvKLNk79Qo4dc~L5c1YyZOJPxBqYPA9g4nutR35paB8OiY9RuD9B70GrU.png" alt="no" />
+          <img className="logo imgnav" src={LogoDark} />
         </NavbarLogo>
         <Navigation>
           <NavigationItem to="/">PRODUCT</NavigationItem>
@@ -124,7 +128,7 @@ function Navbar({ hidden, isHidden }) {
             <Hamburger direction="right" />
           </div>
         </div>
-        {isOpen ? <Menu className="absolute" /> : null}
+        {isOpen ? <Menu setIsOpen={setIsOpen} className="absolute" /> : null}
       </NavbarContainer>
     </motion.div>
   );

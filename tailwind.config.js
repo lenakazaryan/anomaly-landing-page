@@ -25,7 +25,7 @@ module.exports = {
         menuItems: "0002187A",
       },
       backgroundImage: {
-        "ready-background": "url('/public/images/ready-background.webp')",
+        "ready-background": "url('/src/assets/images/ready-background.webp')",
       },
     },
     container: {

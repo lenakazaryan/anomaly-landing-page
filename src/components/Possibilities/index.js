@@ -1,6 +1,7 @@
 import tw from "tailwind-styled-components";
 import PossibilityItem from "./PossibilityItem";
 import Possibility from "./Possibility";
+import PossibilityImage from "../../assets/images/possibility.webp";
 
 const PossibilyContainer = tw.div`
   md:mt-[40px]
@@ -8,8 +9,8 @@ const PossibilyContainer = tw.div`
 
 const PossibilyContent = tw.div`
   w-[100%] 
-  pl-[16px] 
-  pr-[16px] 
+  pl-4 
+  pr-4
   pt-[50px] 
   flex flex-col 
   pb-[25px] 
@@ -22,21 +23,21 @@ function Possibilities() {
     <PossibilyContainer>
       <PossibilyContent>
         <PossibilityItem
-          image="https://framerusercontent.com/modules/assets/WUBZt0YGx0bCjxwIGLqGzWX2vRU~Sq-x68UuHOypnQSMUuS-wK9R1Ru2866Yzi-yxES5TOw.jpg"
+          image={PossibilityImage}
           title="Write Articles"
           subtitle=" with Ease"
           description="Fusce dapibus, tellus ac cursus commodo, tortor mauris imentum
         nibh, ut fermentum massa"
         />
         <Possibility
-          image="https://framerusercontent.com/modules/assets/WUBZt0YGx0bCjxwIGLqGzWX2vRU~Sq-x68UuHOypnQSMUuS-wK9R1Ru2866Yzi-yxES5TOw.jpg"
+          image={PossibilityImage}
           title="Write Articles"
           subtitle=" with Ease"
           description="Fusce dapibus, tellus ac cursus commodo, tortor mauris imentum
         nibh, ut fermentum massa"
         />
         <PossibilityItem
-          image="https://framerusercontent.com/modules/assets/WUBZt0YGx0bCjxwIGLqGzWX2vRU~Sq-x68UuHOypnQSMUuS-wK9R1Ru2866Yzi-yxES5TOw.jpg"
+          image={PossibilityImage}
           title="Write Articles"
           subtitle=" with Ease"
           description="Fusce dapibus, tellus ac cursus commodo, tortor mauris imentum

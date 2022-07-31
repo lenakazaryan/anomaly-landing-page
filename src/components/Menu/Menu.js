@@ -17,7 +17,7 @@ const NavigationItem = tw.a`
  border 
  border-transparent 
  rounded-[20px] 
- py-[12px] 
+ py-3
  px-[21px]
 hover:text-black 
 hover:border-navBorder
@@ -37,7 +37,7 @@ const NavSignUp = tw.button`
   font-black 
   text-[12px] 
   tracking-[0.72px] 
-  py-[12px] 
+  py-3
   px-[25px]
  bg-black 
   rounded-[20px]
@@ -69,9 +69,15 @@ const MenuContent = tw.div`
   top-[0] z-50
 `;
 
-function Menu() {
+function Menu({setIsOpen}) {
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+    
+  };
+
   return (
-    <MenuContainer>
+    <MenuContainer onClick={handleCloseMenu}>
       <MenuContent>
         <Navigation>
           <NavigationItem to="/" className="">
