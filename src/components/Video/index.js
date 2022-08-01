@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import VideoFile from "../../assets/videos/video.mp4";
 import {
   headerAnimation1,
-  headerAnimation2,
   headerAnimation3,
   headerAnimation4,
 } from "../../constants";
