@@ -18,7 +18,7 @@ export const getLists = (arr) =>
       className="md:mb-[8px] text-[22px] font-medium lg:text-[28px]"
       key={item}
     >
-      {item}
+      <a href="#">{item}</a>
     </li>
   ));
 
