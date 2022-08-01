@@ -16,7 +16,7 @@ const TitleContainer = tw.div`
    font-bold
 `;
 
-function Title({ hidden, isHidden }) {
+function Title({ hidden }) {
   return (
     <div>
       <TitleContainer>{hidden && <TitleAnimation />}</TitleContainer>

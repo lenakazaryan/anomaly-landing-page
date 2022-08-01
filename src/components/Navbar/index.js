@@ -103,7 +103,7 @@ function Navbar({ hidden, isHidden }) {
 
   return (
     <motion.div
-      className="pt-[20px] pl-[10px]"
+      className="lg:pt-[20px] pl-[10px]"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -124,12 +124,20 @@ function Navbar({ hidden, isHidden }) {
           <NavSignUp>SIGN UP</NavSignUp>
         </NavigationButtons>
         <div className="w-[40px] h-[40px] bg-menuButtonBackground rounded-[5px] lg:hidden">
-          <div className="hamburger" onClick={handleOpenMenu}>
+          <div className="hamburger fixed" onClick={handleOpenMenu}>
             <Hamburger direction="right" />
           </div>
         </div>
-        {isOpen ? <Menu setIsOpen={setIsOpen} className="absolute" /> : null}
       </NavbarContainer>
+      {isOpen ? (
+        <Menu
+          isHidden={isHidden}
+          hidden={hidden}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          className="absolute"
+        />
+      ) : null}
     </motion.div>
   );
 }

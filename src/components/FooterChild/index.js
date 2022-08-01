@@ -3,18 +3,20 @@ import { getListsFooter } from "../../helpers";
 import { footerItem } from "../../helpers";
 
 const FooterChildContainer = tw.div`
+lg:border
+lg:border-t-footerBorder
 bg-footerBackground
  pl-4
  pr-4
  text-white 
  pt-[41px] 
  pb-[45px]
+ lg:pt-[20px]
+ lg:pb-[20px]
 `;
 
 const FooterChildren = tw.div`
-  border-t 
-  border-footerBorder 
-  pt-[35px]
+  pt-[15px]
   flex 
   flex-col 
   justify-center 

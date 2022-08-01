@@ -22,6 +22,7 @@ const Container = tw.div`
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [hidden, isHidden] = useState(true);
 
   useEffect(() => {
     modalIsOpen
@@ -37,10 +38,11 @@ function App() {
     setIsOpen(false);
   }
 
-  const [hidden, isHidden] = useState(true);
   return (
     <div className="App">
-      {modalIsOpen ? <VideoOverlay closeModal={closeModal} /> : null}
+      {modalIsOpen ? (
+        <VideoOverlay closeModal={closeModal} hidden={hidden} />
+      ) : null}
       <Navbar hidden={hidden} isHidden={isHidden} />
       <Title hidden={hidden} isHidden={isHidden} />
       <Video openModal={openModal} />

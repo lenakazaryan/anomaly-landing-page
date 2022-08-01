@@ -126,7 +126,7 @@ export const headerAnimation2 = {
       type: "tween",
       delay: 0.15,
       ease: [0.16, 1, 0.3, 1],
-      duration: 1.5,
+      duration: 1,
     },
   },
   onscreen: {
@@ -141,7 +141,7 @@ export const headerAnimation2 = {
       type: "tween",
       delay: 0.15,
       ease: [0.16, 1, 0.3, 1],
-      duration: 2,
+      duration: 1.5,
     },
   },
 };

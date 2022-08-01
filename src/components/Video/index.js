@@ -25,7 +25,7 @@ const VideoDescription = tw.div`
   font-medium
   pl-4
   pr-4
-  md:pt-10
+  md:pt-[100px]
   md:px-[40px]
   lg:w-[640px]
   lg:m-auto
@@ -34,7 +34,7 @@ const VideoDescription = tw.div`
 
 const Videobuttons = tw.div`
   flex
-  gap-[28px]
+  gap-[18px]
   flex-col
   justify-center
   items-center
@@ -44,7 +44,7 @@ const Videobuttons = tw.div`
   md:flex-row
   md:items-center
   md:justify-center
-  md:pt-[20px]
+  md:pt-[35px]
   md:w-[400px]
   md:m-auto
 `;
@@ -56,7 +56,7 @@ function Video({ openModal }) {
         <VideoContainer>
           <div className="cursor-pointer absolute flex justify-center items-center w-[57px] h-[57px] top-1/2 left-1/2 z-10 -translate-x-2/4 -translate-y-2/4 bg-bodyBg lg:w-[83px] lg:h-[83px] rounded-full">
             <div className="flex justify-center items-center  bg-bodyBg rounded-full w-[57px] h-[57px]">
-              <div className="ml-[5px] arrow-right"></div>
+              <div className="  ml-[5px] arrow-right"></div>
             </div>
           </div>
           <motion.video
@@ -100,7 +100,7 @@ function Video({ openModal }) {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true }}
-          variants={headerAnimation2}
+          variants={headerAnimation1}
           className="cursor-pointer transition duration-100 ease-in md:w-[172px] hover:text-gray border border-navBorder max-w-[352px] md:mt-[0] w-[100%] font-black text-[12px] tracking-[0.72px] py-[12px] px-[25px] rounded-[20px] mt-[15px]"
         >
           VIEW FEATURES

@@ -56,9 +56,9 @@ const MenuContainer = tw.div`
   left-0
  bg-overLaybg 
  w-[100%] 
- top-[65px] 
- h-[1500px] 
- z-50 lg:hidden
+ top-[95px] 
+ h-[1500px]  
+ lg:hidden
 `;
 
 const MenuContent = tw.div`
@@ -66,18 +66,23 @@ const MenuContent = tw.div`
   left-0
   bg-bodyBg 
   w-[100%]
-  top-[0] z-50
+  top-[85px] 
+ 
 `;
 
-function Menu({setIsOpen}) {
-
-  const handleCloseMenu = () => {
-    setIsOpen(false);
-    
+function Menu({ isOpen, setIsOpen, isHidden }) {
+  const handleCloseMenu = (e) => {
+    if (isOpen) {
+      setIsOpen(false);
+      isHidden(true);
+      return;
+    }
+    e.stopPropagation();
   };
 
   return (
-    <MenuContainer onClick={handleCloseMenu}>
+    <div>
+      <MenuContainer onClick={handleCloseMenu}></MenuContainer>
       <MenuContent>
         <Navigation>
           <NavigationItem to="/" className="">
@@ -92,7 +97,7 @@ function Menu({setIsOpen}) {
           <NavLogin>LOGIN</NavLogin>
         </NavigationButtons>
       </MenuContent>
-    </MenuContainer>
+    </div>
   );
 }
 
