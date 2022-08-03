@@ -1,4 +1,4 @@
-export const readyToWorkAnimation1 = {
+export const animation1 = {
   offscreen: {
     y: 100,
     x: 0,
@@ -23,7 +23,7 @@ export const readyToWorkAnimation1 = {
   },
 };
 
-export const readyToWorkAnimation2 = {
+export const animation2 = {
   offscreen: {
     y: 100,
     x: 0,
@@ -66,11 +66,9 @@ export const menuAnimation = {
 
 export const navbarAnimation = {
   offscreen: {
-    y: 10,
     opacity: 0,
   },
   onscreen: {
-    y: 10,
     opacity: 1,
     transition: {
       type: "spring",
@@ -80,7 +78,7 @@ export const navbarAnimation = {
   },
 };
 
-export const headerAnimation1 = {
+export const animation3 = {
   offscreen: {
     y: 160,
     x: 0,
@@ -146,7 +144,7 @@ export const headerAnimation2 = {
   },
 };
 
-export const headerAnimation3 = {
+export const animation4 = {
   offscreen: {
     y: 160,
     x: 0,
@@ -179,7 +177,7 @@ export const headerAnimation3 = {
   },
 };
 
-export const headerAnimation4 = {
+export const animation5 = {
   offscreen: {
     y: 160,
     x: 0,
@@ -189,9 +187,10 @@ export const headerAnimation4 = {
     rotateY: 10,
     scale: 0.9,
     transition: {
-      type: "tween",
+      perspective: "1200px",
+      type: "spring",
       delay: 0.15,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.44, 0, 0.56, 1],
       duration: 2,
     },
   },
@@ -204,9 +203,10 @@ export const headerAnimation4 = {
     opacity: 1,
     scale: 1,
     transition: {
-      type: "tween",
+      perspective: "1200px",
+      type: "spring",
       delay: 0.15,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.44, 0, 0.56, 1],
       duration: 3.5,
     },
   },

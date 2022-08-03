@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
-import { readyToWorkAnimation1, readyToWorkAnimation2 } from "../../constants";
+import { animation1, animation2 } from "../../constants";
 
 const ReadyToWorkContainer = tw.div`
   rounded-t-lg 
@@ -78,7 +78,7 @@ function ReadyToWork() {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
-          variants={readyToWorkAnimation1}
+          variants={animation1}
         >
           <ReadyToWorkTitle>
             Ready to Work with the most Intuitive Editor of All Time?
@@ -89,7 +89,7 @@ function ReadyToWork() {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
-          variants={readyToWorkAnimation2}
+          variants={animation2}
         >
           <ReadyToWorkDescription>
             Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean
@@ -102,7 +102,7 @@ function ReadyToWork() {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
-          variants={readyToWorkAnimation2}
+          variants={animation2}
         >
           <ReadyToWorkButton>TRY IT FOR FREE</ReadyToWorkButton>
         </motion.div>

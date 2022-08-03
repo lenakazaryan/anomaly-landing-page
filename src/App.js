@@ -11,15 +11,6 @@ import FooterChild from "./components/FooterChild";
 import { useState, useEffect } from "react";
 import VideoOverlay from "./components/VideoOverlay";
 
-const Container = tw.div`
-    flex
-    items-center
-    justify-center
-    flex-col
-    w-full
-    bg-red-400
-`;
-
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [hidden, isHidden] = useState(true);
@@ -44,7 +35,7 @@ function App() {
         <VideoOverlay closeModal={closeModal} hidden={hidden} />
       ) : null}
       <Navbar hidden={hidden} isHidden={isHidden} />
-      <Title hidden={hidden} isHidden={isHidden} />
+      <Title/>
       <Video openModal={openModal} />
       <Job />
       <Possibilities />

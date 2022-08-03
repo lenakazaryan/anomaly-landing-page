@@ -20,8 +20,8 @@ module.exports = {
         footerItems: "rgb(230, 234, 242)",
         footerBackground: "#000218",
         menuButtonBackground: "rgb(231, 235, 242)",
-        overLaybg: "rgba(0, 2, 24, 0.8)",
-        bodyBg: "#F7FBFE",
+        overLaybg: "rgba(0, 0, 0, 0.8)",
+        bodyBg: "rgb(247, 251, 254)",
         menuItems: "0002187A",
       },
       backgroundImage: {

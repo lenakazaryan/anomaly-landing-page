@@ -3,7 +3,6 @@ import tw from "tailwind-styled-components";
 const Navigation = tw.div`
   pb-[29px]
   ml-[20px]
-  mt-[12px]
 `;
 
 const NavigationItem = tw.a`
@@ -52,22 +51,21 @@ const NavLogin = tw.button`
 `;
 
 const MenuContainer = tw.div`
-  absolute 
+ absolute
   left-0
  bg-overLaybg 
  w-[100%] 
- top-[95px] 
+ top-[300px] 
  h-[1500px]  
  lg:hidden
 `;
 
 const MenuContent = tw.div`
-  absolute 
   left-0
   bg-bodyBg 
   w-[100%]
-  top-[85px] 
- 
+  top-0
+  
 `;
 
 function Menu({ isOpen, setIsOpen, isHidden }) {
@@ -81,9 +79,16 @@ function Menu({ isOpen, setIsOpen, isHidden }) {
   };
 
   return (
-    <div>
-      <MenuContainer onClick={handleCloseMenu}></MenuContainer>
-      <MenuContent>
+    <div
+      className="z-[1] fixed left-0 w-full h-full bg-overLaybg "
+      onClick={handleCloseMenu}
+    >
+      {/* <MenuContainer ></MenuContainer> */}
+      <MenuContent
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <Navigation>
           <NavigationItem to="/" className="">
             PRODUCT

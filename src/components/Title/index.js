@@ -16,10 +16,12 @@ const TitleContainer = tw.div`
    font-bold
 `;
 
-function Title({ hidden }) {
+function Title() {
   return (
     <div>
-      <TitleContainer>{hidden && <TitleAnimation />}</TitleContainer>
+      <TitleContainer>
+        <TitleAnimation />
+      </TitleContainer>
     </div>
   );
 }
