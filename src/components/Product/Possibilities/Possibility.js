@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
-import { pictureAnimation, textAnimation } from "../../constants";
+import { pictureAnimation, textAnimation } from "../../../constants";
 
 const PossibilyItem = tw.div`
   bg-posibilityBackground 
@@ -21,7 +21,7 @@ const PossibilyImageContainer = tw.div`
 `;
 
 const PossibilyTextsContainer = tw.div`
- md:pl-[70px]
+ md:pr-[70px]
 `;
 
 const PossibilyTitle = tw.p`
@@ -51,26 +51,16 @@ const PossibilityDescription = tw.p`
   text-[16px]
 `;
 
-function PossibilityItem({ image, title, subtitle, description }) {
+function Possibility({ image, title, subtitle, description }) {
   return (
     <PossibilyItem>
-      <PossibilyImageContainer>
-        <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}
-          variants={pictureAnimation}
-        >
-          <img className="rounded-[20px] w-[100%]" src={image} />
-        </motion.div>
-      </PossibilyImageContainer>
       <PossibilyTextsContainer>
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
           variants={textAnimation}
-          className="possibility-texts-container"
+          className="possibility-texts-container-item"
         >
           <PossibilyTitle>
             {title}
@@ -79,8 +69,19 @@ function PossibilityItem({ image, title, subtitle, description }) {
           <PossibilityDescription>{description}</PossibilityDescription>
         </motion.div>
       </PossibilyTextsContainer>
+      <PossibilyImageContainer>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={pictureAnimation}
+          className="possibility-img-container"
+        >
+          <img className="rounded-[20px] w-[100%]" src={image} />
+        </motion.div>
+      </PossibilyImageContainer>
     </PossibilyItem>
   );
 }
 
-export default PossibilityItem;
+export default Possibility;

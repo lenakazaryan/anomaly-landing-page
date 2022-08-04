@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
-import { pictureAnimation } from "../../constants";
+import { pictureAnimation } from "../../../constants";
 
 const JobItem = tw.div`
  bg-jobBackground 

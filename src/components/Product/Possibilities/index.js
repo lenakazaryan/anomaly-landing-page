@@ -1,7 +1,8 @@
 import tw from "tailwind-styled-components";
 import PossibilityItem from "./PossibilityItem";
 import Possibility from "./Possibility";
-import PossibilityImage from "../../assets/images/possibility.webp";
+// import PossibilityImage from "../../assets/images/possibility.webp";
+import PossibilityImage from "../../../assets/images/possibility.webp";
 
 const PossibilyContainer = tw.div`
   md:mt-[40px]

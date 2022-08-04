@@ -26,6 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         "ready-background": "url('/src/assets/images/ready-background.webp')",
+        "pricing-background":"url('/src/assets/images/pricing-background.webp')",
       },
     },
     container: {

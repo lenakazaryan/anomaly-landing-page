@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
-import { animation1, animation2 } from "../../constants";
+import { animation1, animation2 } from "../../../constants";
 
 const ReadyToWorkContainer = tw.div`
   rounded-t-lg 

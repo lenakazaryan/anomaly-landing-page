@@ -1,6 +1,7 @@
 import tw from "tailwind-styled-components";
 import JobContent from "../Job/JobContent";
-import ProfilePicture from "../../assets/images/profile-picture.jpg";
+// import ProfilePicture from "../../assets/images/profile-picture.jpg";
+import ProfilePicture from "../../../assets/images/profile-picture.jpg";
 
 const JobContainer = tw.div`
   flex

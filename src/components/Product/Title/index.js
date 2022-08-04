@@ -1,6 +1,6 @@
 import React from "react";
 import tw from "tailwind-styled-components";
-import TitleAnimation from "../TitleAnimation";
+import TitleAnimation from "../../Animations/TitleAnimation";
 
 const TitleContainer = tw.div`
    text-[40px]

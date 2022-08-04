@@ -1,8 +1,9 @@
 import React from "react";
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
-import VideoFile from "../../assets/videos/video.mp4";
-import { animation3, animation4, animation5 } from "../../constants";
+import VideoFile from "../../../assets/videos/video.mp4";
+import { animation3, animation4, animation5 } from "../../../constants";
+import VideoOverlay from "../../VideoOverlay";
 
 const VideoContainer = tw.div`
   max-w-[1080px]
@@ -44,11 +45,19 @@ const Videobuttons = tw.div`
   md:m-auto
 `;
 
-function Video({ openModal }) {
+function Video({ modalIsOpen, setIsOpen }) {
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <div>
       <div className="pt-10 md:px-10 z-10">
-        <VideoContainer onClick={openModal} disabled={true}>
+        {modalIsOpen ? <VideoOverlay closeModal={closeModal} /> : null}
+        <VideoContainer onClick={openModal}>
           <div>
             <motion.video
               style={{ perspective: "9cm" }}
