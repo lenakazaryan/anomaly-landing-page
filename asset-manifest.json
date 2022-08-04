@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anomaly-landing-page/static/css/main.76bb3b96.css",
-    "main.js": "/anomaly-landing-page/static/js/main.d1f83165.js",
+    "main.css": "/anomaly-landing-page/static/css/main.a965b584.css",
+    "main.js": "/anomaly-landing-page/static/js/main.836f825e.js",
     "static/js/787.bd02f72e.chunk.js": "/anomaly-landing-page/static/js/787.bd02f72e.chunk.js",
     "static/media/video.mp4": "/anomaly-landing-page/static/media/video.4fa7902aa9d1ae97ecfa.mp4",
     "static/media/logo-dark.png": "/anomaly-landing-page/static/media/logo-dark.e6b0b4c5bb7f8b42a541.png",
@@ -43,15 +43,16 @@
     "static/media/Satoshi-Black.woff2": "/anomaly-landing-page/static/media/Satoshi-Black.b5013d854bb5a8e48651.woff2",
     "static/media/Satoshi-LightItalic.woff2": "/anomaly-landing-page/static/media/Satoshi-LightItalic.540a6dd2e29f70e15477.woff2",
     "static/media/Satoshi-Light.woff2": "/anomaly-landing-page/static/media/Satoshi-Light.df8f06167ee6fd05a131.woff2",
+    "static/media/pricing-background.webp": "/anomaly-landing-page/static/media/pricing-background.aeaf65de18d6a7759a3d.webp",
     "static/media/logo-light.png": "/anomaly-landing-page/static/media/logo-light.2ad6826ef10374e4d8b5.png",
     "static/media/profile-picture.jpg": "/anomaly-landing-page/static/media/profile-picture.10e7c669df1ab24eb39a.jpg",
     "index.html": "/anomaly-landing-page/index.html",
-    "main.76bb3b96.css.map": "/anomaly-landing-page/static/css/main.76bb3b96.css.map",
-    "main.d1f83165.js.map": "/anomaly-landing-page/static/js/main.d1f83165.js.map",
+    "main.a965b584.css.map": "/anomaly-landing-page/static/css/main.a965b584.css.map",
+    "main.836f825e.js.map": "/anomaly-landing-page/static/js/main.836f825e.js.map",
     "787.bd02f72e.chunk.js.map": "/anomaly-landing-page/static/js/787.bd02f72e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76bb3b96.css",
-    "static/js/main.d1f83165.js"
+    "static/css/main.a965b584.css",
+    "static/js/main.836f825e.js"
   ]
 }
